@@ -1,0 +1,98 @@
+.products-details-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.products-details {
+  width: 50%;
+}
+
+.products-image {
+  width: 50%;
+}
+
+.products-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart-button {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255) !important;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px dashed rgb(0, 0, 0);
+  cursor: pointer;
+  color: black;
+  margin-top: 10px;
+}
+
+.cart-button:hover {
+  background: rgb(235, 235, 235);
+  color: rgb(104, 103, 103) !important;
+  font-weight: bold;
+}
+
+.products-details p {
+  white-space: pre-line;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.size-buttons {
+  
+  gap: 8px;
+  margin-top: 10px;
+}
+.stock-number{
+  display: flex;
+  margin: 0;
+  color: red;
+ font-size: x-small;
+}
+
+
+
+
+
+.size-buttons button {
+  padding: 8px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.size-buttons button.selected {
+  background-color: #000; /* Black background for selected button */
+  color: #fff; /* White text for selected button */
+}
+
+/* Mantener el contenido centrado en dispositivos móviles */
+@media screen and (max-width: 638px) {
+  .products-details-container {
+    flex-direction: column; /* Cambiar a dirección de columna en dispositivos móviles */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+    margin: 90px auto; /* Cambiar el margen y centrar el contenedor */
+    max-width: 90%; /* Limitar el ancho máximo del contenedor */
+  }
+
+  .products-details {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    max-width: none; /* Restablecer el ancho máximo */
+    margin-top: 20px; /* Espacio superior en dispositivos móviles */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .size-buttons {
+    justify-content: center;
+  }
+
+  .products-image {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    margin-top: 20px; /* Espacio superior entre la imagen y el texto */
+  }
+}

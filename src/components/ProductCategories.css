@@ -1,0 +1,29 @@
+.photo-links-container {
+  display: flex;
+}
+
+.photo-link {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.photo-link img {
+  width: 100%;
+  filter: brightness(.8);
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 10px;
+  font-family: "Inter ", sans-serif;
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Gochi+Hand&family=Rajdhani:wght@700&family=Teko:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-family: "Inter Tight", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+  padding-left: 130px;
+  padding-right: 150px;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-item a:hover {
+  color: gray;
+}
+
+.nav-span:hover {
+  color: gray;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.navbar-login-container {
+  position: absolute;
+  left: 10%;
+}
+
+.navbar-login-container img {
+  width: 30px;
+}
+
+.navbar-login-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  color: #000;
+}
+
+.nav-cart-icon {
+  width: 25px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.nav-search-icon {
+  width: 20px;
+  margin-top: 2px;
+}
+
+.center-links {
+  display: flex;
+  align-items: center;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -120%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+.signup-login-container {
+  display: flex;
+}
+.signup-login-container p {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+}
+
+.user-info p {
+  margin-right: 0.9em;
+  font-size: 0.9em;
+}
+
+.logout-text {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  background-color: rgb(70, 70, 70);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 1085px) {
+  .navbar {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    margin-left: 10px;
+  }
+
+  .nav-icons {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 240px;
+    right: 0;
+  }
+
+  .user-info {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 55px;
+  }
+
+  #flor {
+    display: none;
+  }
+}

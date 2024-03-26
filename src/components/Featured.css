@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300&display=swap");
+
+.featured-featured {
+  text-align: center;
+  margin-top: 50px;
+  color: #000000;
+}
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.featured-title {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 22px;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.featured-title:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    to right,
+    black,
+    black 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  z-index: -1;
+}
+
+.featured-item {
+  flex: 0 1 calc(25% - 20px);
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter Tight", sans-serif;
+  padding: 2em;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+
+.featured-item img {
+  width: 100%;
+  z-index: 0;
+  transition: opacity 0.3s;
+}
+
+.featured-item:hover img {
+  opacity: 0.3;
+}
+
+.additional-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000b0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-item:hover .additional-text {
+  opacity: 1;
+}
+
+.featured-item h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  color: #000000;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .additional-text {
+    position: absolute;
+    opacity: 1;
+    top: auto;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .featured-item {
+    flex: 0 1 calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+  }
+}
+
+/* Media query para ajustar el diseño en pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+  .featured-item {
+    flex: 0 1 calc(100% - 20px); /* Una columna en pantallas muy pequeñas */
+  }
+}

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.skate-promo {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.skate-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.scrolling-text {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.scrolling-text--inner {
+  display: flex;
+  color: rgba(0, 0, 0, 0.932);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+:root {
+  --marquee-speed: 0s;
+}
+
+.scrolling-text--item {
+  padding: 10px;
+  font-size: 40px;
+  white-space: nowrap;
+  margin-right: 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.skate-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-text, var(--color-accent));
+}
+
+.scrolling-text--item:hover {
+  font-style: italic;
+}
+
+.direction-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

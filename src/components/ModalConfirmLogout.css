@@ -1,0 +1,31 @@
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-buttons button {
+  margin: 0 10px;
+}

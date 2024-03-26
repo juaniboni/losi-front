@@ -1,0 +1,18 @@
+.login-container {
+  width: 400px;
+  margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
+  margin-top: 130px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Inter Tight", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-link {
+  text-decoration: none;
+}
+
+.forgot-link {
+  text-decoration: none;
+}
