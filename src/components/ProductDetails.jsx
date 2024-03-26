@@ -47,7 +47,7 @@ const ProductDetails = ({ toggleCart }) => {
   const fetchProductDetails = async (productId) => {
     try {
       const response = await axios.get(
-        `http://losi-back-deploy-two.vercel.app/products/${productId}`
+        import.meta.env.VITE_API_URL + `products/${productId}`
       );
       console.log(response.data);
       setProductDetails(response.data);
@@ -59,7 +59,7 @@ const ProductDetails = ({ toggleCart }) => {
   const fetchProductStock = async (productId) => {
     try {
       const response = await axios.get(
-        `http://losi-back-deploy-two.vercel.app/stock/${productId}`
+        import.meta.env.VITE_API_URL + `stock/${productId}`
       );
       console.log(response.data);
       setProductStocks(response.data);
