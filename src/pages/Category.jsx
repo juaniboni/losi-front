@@ -14,7 +14,7 @@ const Category = () => {
     const fetchCategory = async () => {
       try {
         const response = await axios.get(
-          import.meta.env.VITE_API_URL + `category/${categoryName}`
+          `${import.meta.env.VITE_API_URL}category/${categoryName}`
         );
         setCategory(response.data);
         console.log(response.data);
