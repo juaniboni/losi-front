@@ -151,13 +151,13 @@ const Navbar = ({ toggleCart }) => {
         <div className="nav-icons">
           <img
             onClick={openSearchModal}
-            src="/public/search-icon.png"
+            src={`${import.meta.env.VITE_BUKET_URL}search-icon.png`}
             alt=""
             className="nav-search-icon"
           />
           <Link to="#" onClick={toggleCart}>
             <img
-              src="/public/empty-cart-icon.png"
+              src={`${import.meta.env.VITE_BUKET_URL}empty-cart-icon.png`}
               alt=""
               className="nav-cart-icon"
             />
