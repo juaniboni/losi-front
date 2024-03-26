@@ -131,7 +131,7 @@ const Navbar = ({ toggleCart }) => {
               <Link to="/">
                 <img
                   className="losi-flor"
-                  src="/public/losiFlor.png"
+                  src={`${import.meta.env.VITE_BUKET_URL}losiFlor.png`}
                   alt="logo"
                   style={{ width: "100px", height: "auto" }}
                 />
